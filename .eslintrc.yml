@@ -1,0 +1,27 @@
+root: true
+
+
+extends:
+  - bsara
+
+parserOptions:
+  sourceType: module
+
+env:
+  node: true
+
+
+rules:
+  # Possible Errors
+  # ----------------------------------------------------------
+
+  # Disabled
+  no-console: off
+
+
+
+  # Node.js and CommonJS
+  # ----------------------------------------------------------
+
+  # Disabled
+  global-require: off

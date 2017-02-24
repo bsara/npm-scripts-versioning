@@ -1,0 +1,49 @@
+{
+  "name": "npm-scripts-versioning",
+  "version": "1.0.0-beta.0",
+  "description": "",
+  "authors": [
+    "Brandon Sara (https://bsara.github.io/)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bsara/npm-scripts-versioning#readme",
+  "repository": "bsara/npm-scripts-versioning",
+  "bugs": {
+    "url": "https://github.com/bsara/npm-scripts-versioning/issues"
+  },
+  "keywords": [
+    "build",
+    "npm",
+    "package",
+    "pkg",
+    "run",
+    "script",
+    "scripts",
+    "version",
+    "versioning"
+  ],
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "index.js",
+    "lib/*.js"
+  ],
+  "bin": {
+    "update-version-comment-refs": "lib/update-version-comment-refs.js",
+    "push-changed-version-ref-files": "lib/push-changed-version-ref-files.js",
+    "tag-version": "lib/tag-version.js"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "shelljs": "^0.7.6"
+  },
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "eslint-config-bsara": "^1.1.0"
+  }
+}
