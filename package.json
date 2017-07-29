@@ -38,7 +38,12 @@
   },
   "scripts": {
     "l": "npm run lint",
-    "lint": "npx eslint ."
+    "lint": "npx eslint .",
+    "bump": "npm --no-git-tag-version version prerelease",
+    "bump:major": "npm --no-git-tag-version version major",
+    "bump:minor": "npm --no-git-tag-version version minor",
+    "bump:patch": "npm --no-git-tag-version version patch",
+    "postpublish": "npm run bump"
   },
   "dependencies": {
     "escape-string-regexp": "^1.0.5",
