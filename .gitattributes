@@ -39,6 +39,7 @@
 *.ttc   binary diff=exif
 *.ttf   binary diff=exif
 *.woff  binary
+*.woff2 binary
 
 
 # Audio Visual

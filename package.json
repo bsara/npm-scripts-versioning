@@ -3,7 +3,7 @@
   "version": "1.0.0-beta.0",
   "description": "",
   "authors": [
-    "Brandon Sara (https://bsara.github.io/)"
+    "Brandon Sara (https://bsara.pro/)"
   ],
   "license": "ISC",
   "homepage": "https://github.com/bsara/npm-scripts-versioning#readme",
@@ -37,13 +37,15 @@
     "tag-version": "lib/tag-version.js"
   },
   "scripts": {
-    "lint": "eslint ."
+    "l": "npm run lint",
+    "lint": "npx eslint ."
   },
   "dependencies": {
+    "escape-string-regexp": "^1.0.5",
     "shelljs": "^0.7.6"
   },
   "devDependencies": {
-    "eslint": "^3.16.1",
-    "eslint-config-bsara": "^1.1.0"
+    "@bsara/eslint-config": "^2.1.5",
+    "eslint": "^3.19.0"
   }
 }

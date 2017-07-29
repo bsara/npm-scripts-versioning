@@ -2,7 +2,7 @@ root: true
 
 
 extends:
-  - bsara
+  - '@bsara'
 
 parserOptions:
   sourceType: module
@@ -12,6 +12,7 @@ env:
 
 
 rules:
+
   # Possible Errors
   # ----------------------------------------------------------
 
