@@ -1,6 +1,6 @@
 {
   "name": "npm-scripts-versioning",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.5",
   "description": "",
   "authors": [
     "Brandon Sara (https://bsara.pro/)"
@@ -28,7 +28,6 @@
     "test": "test"
   },
   "files": [
-    "index.js",
     "lib/*.js"
   ],
   "bin": {
@@ -43,7 +42,7 @@
     "bump:major": "npm --no-git-tag-version version major",
     "bump:minor": "npm --no-git-tag-version version minor",
     "bump:patch": "npm --no-git-tag-version version patch",
-    "postversion": "./lib/update-version-comment-refs.js && ./lib/push-changed-version-files.js",
+    "postversion": "./lib/update-version-comment-refs.js && ./lib/push-changed-version-ref-files.js",
     "prepublishOnly": "npm run lint && git push && npx ./lib/tag-version.js",
     "postpublish": "npm run bump"
   },
