@@ -32,7 +32,7 @@
   ],
   "bin": {
     "update-version-comment-refs": "lib/update-version-comment-refs.js",
-    "push-changed-version-ref-files": "lib/push-changed-version-ref-files.js",
+    "push-version-comment-refs": "lib/push-version-comment-refs.js",
     "tag-version": "lib/tag-version.js"
   },
   "scripts": {
@@ -42,7 +42,7 @@
     "bump:major": "npm --no-git-tag-version version major",
     "bump:minor": "npm --no-git-tag-version version minor",
     "bump:patch": "npm --no-git-tag-version version patch",
-    "postversion": "./lib/update-version-comment-refs.js && ./lib/push-changed-version-ref-files.js",
+    "postversion": "./lib/update-version-comment-refs.js && ./lib/push-version-comment-refs.js",
     "prepublishOnly": "npm run lint && git push && npx ./lib/tag-version.js",
     "postpublish": "npm run bump"
   },
