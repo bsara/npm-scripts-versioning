@@ -1,6 +1,6 @@
 {
   "name": "npm-scripts-versioning",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "",
   "authors": [
     "Brandon Sara (https://bsara.pro/)"
@@ -43,6 +43,8 @@
     "bump:major": "npm --no-git-tag-version version major",
     "bump:minor": "npm --no-git-tag-version version minor",
     "bump:patch": "npm --no-git-tag-version version patch",
+    "postversion": "./lib/update-version-comment-refs.js && ./lib/push-changed-version-files.js",
+    "prepublishOnly": "npm run lint && git push && npx ./lib/tag-version.js",
     "postpublish": "npm run bump"
   },
   "dependencies": {
@@ -51,6 +53,6 @@
   },
   "devDependencies": {
     "@bsara/eslint-config": "^2.1.5",
-    "eslint": "^3.19.0"
+    "eslint": "^4.3.0"
   }
 }
