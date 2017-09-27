@@ -20,11 +20,21 @@
 /*.sublime*
 .sublime-gulp.cache
 
-# JetBrains IDEs
-/.idea
-
 # VS Code
 /.vscode
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings
+
+# Netbeans
+nbactions*.xml
+nb-configuration*.xml
 
 
 #---------------------------------------#
